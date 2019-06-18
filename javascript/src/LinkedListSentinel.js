@@ -1,4 +1,4 @@
-const LinkedListElement = require('./LinkedListElement')
+const LinkedListElement = require('./supporting/LinkedListElement')
 
 module.exports = class LinkedList {
     constructor() {

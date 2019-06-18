@@ -1,5 +1,5 @@
 const LinkedList = require('../src/LinkedList')
-const LinkedListElement = require('../src/LinkedListElement')
+const LinkedListElement = require('../src/supporting/LinkedListElement')
 
 let test = () => {
     let list = new LinkedList();
