@@ -7,13 +7,13 @@ module.exports = class MaxHeap extends Heap {
 
         let largest;
 
-        if (l < this.heapSize && this.data[l] > this.data[i]) {
+        if (l <= this.heapSize && this.data[l] > this.data[i]) {
             largest = l;
         } else {
             largest = i;
         }
 
-        if (r < this.heapSize && this.data[r] > this.data[largest]) {
+        if (r <= this.heapSize && this.data[r] > this.data[largest]) {
             largest = r;
         }
 
@@ -38,7 +38,7 @@ module.exports = class MaxHeap extends Heap {
     heapSort() {
         this.buildMaxHeap();
 
-        for (let i = this.heapSize; i > 2; i--) {
+        for (let i = this.heapSize; i >= 2; i--) {
             let root = this.data[1];
 
             this.data[1] = this.data[i];
