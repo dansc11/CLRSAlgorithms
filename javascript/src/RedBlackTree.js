@@ -1,6 +1,6 @@
 const TreeNode = require('./supporting/TreeNode');
 
-module.exports = class BinarySearchTree {
+module.exports = class RedBlackTree {
     constructor(array) {
         this.root = null;
         this.nil = new TreeNode(null);
